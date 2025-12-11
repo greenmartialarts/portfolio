@@ -2,7 +2,9 @@
 
 A high-performance, responsive portfolio website built with vanilla HTML, CSS, and JavaScript. Designed with a custom "Neon Green" aesthetic, it features advanced UI interactions like glassmorphism, 3D tilt effects, and real-time GitHub statistics.
 
-![Project Preview](https://via.placeholder.com/800x400?text=Portfolio+Preview)
+## Live Demo
+
+You can view the live demo at [GreenMartialArts Portfolio](https://greenmartialarts.github.io/portfolio).
 
 ## Features
 
