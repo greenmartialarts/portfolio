@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arnav Shah - Full-Stack & Python Developer</title>
+    <meta name="description"
+        content="Portfolio of Arnav Shah, a Full-Stack and iOS Developer specializing in Python, Swift, and modern web technologies.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="cursor cursor-hidden"></div>
+    <div class="cursor2 cursor-hidden"></div>
+
+    <nav class="navbar">
+        <div class="logo">GreenMartialArts<span class="dot">.</span></div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <!-- Dark Mode Toggle Placeholder -->
+            <li><button id="theme-toggle" aria-label="Toggle Dark Mode"><i class="fas fa-moon"></i></button></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <header id="hero" class="hero-section hidden">
+        <div class="hero-content">
+            <h1 class="fade-in">Hi, I'm <span class="highlight">Arnav Shah</span></h1>
+            <h2 class="fade-in delay-1">Full-Stack & Python Developer</h2>
+            <p class="fade-in delay-2">Building robust backends and dynamic web experiences.</p>
+            <a href="#projects" class="cta-button fade-in delay-3">View My Work</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="skills" class="skills-section hidden">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <!-- Skills will be populated here -->
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <div class="skill-cards">
+                        <div class="skill-card"><i class="fab fa-python"></i> Python</div>
+                        <div class="skill-card"><i class="fab fa-swift"></i> Swift</div>
+                        <div class="skill-card"><i class="fab fa-js"></i> JavaScript</div>
+                        <div class="skill-card"><i class="fas fa-code"></i> TypeScript</div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Frameworks & Tools</h3>
+                    <div class="skill-cards">
+                        <div class="skill-card"><i class="fab fa-git-alt"></i> Git</div>
+                        <div class="skill-card"><i class="fas fa-robot"></i> GitHub Actions</div>
+                        <div class="skill-card"><i class="fas fa-flask"></i> Flask</div>
+                        <div class="skill-card"><i class="fab fa-react"></i> React</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section hidden">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1: Shift Scheduler API -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="placeholder-img"
+                            style="background: linear-gradient(135deg, #2b5876 0%, #4e4376 100%); display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-server fa-3x" style="color: rgba(255,255,255,0.2);"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>shift-scheduler-api</h3>
+                        <p>A robust Backend API for managing volunteer shifts, featuring auto-assignment algorithms and
+                            validation.</p>
+                        <div class="tech-stack">
+                            <span>Python</span><span>FastAPI</span><span>SQLAlchemy</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/greenmartialarts/shift-scheduler-api" target="_blank"><i
+                                    class="fab fa-github"></i> Code</a>
+                            <a href="https://shift-scheduler-api-production.up.railway.app/docs" target="_blank"><i
+                                    class="fas fa-external-link-alt"></i> Live API Docs</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2: Shift Scheduler Web -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="placeholder-img"
+                            style="background: linear-gradient(135deg, #00b09b, #96c93d); display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-desktop fa-3x" style="color: rgba(255,255,255,0.2);"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>shift-scheduler-web</h3>
+                        <p>Modern web interface for the scheduler API. Allows volunteers to sign up and admins to manage
+                            schedules.</p>
+                        <div class="tech-stack">
+                            <span>TypeScript</span><span>React</span><span>Vite</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/greenmartialarts/shift-scheduler-web" target="_blank"><i
+                                    class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3: Quick Snap Receipt Organizer -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="placeholder-img"
+                            style="background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); display: flex; align-items: center; justify-content: center;">
+                            <i class="fab fa-apple fa-3x" style="color: #333;"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Quick Snap Receipt Organizer</h3>
+                        <p>iOS application to scan, organize, and track receipts for simplified expense management.</p>
+                        <div class="tech-stack">
+                            <span>Swift</span><span>SwiftUI</span><span>CoreData</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/greenmartialarts/quick-snap-reciept-organizer"
+                                target="_blank"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 5: Mafia Website -->
+                <article class="project-card tilt-card">
+                    <div class="project-image">
+                        <div class="placeholder-img"
+                            style="background: linear-gradient(135deg, #434343 0%, #000000 100%); display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-gamepad fa-3x" style="color: rgba(255,255,255,0.2);"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>mafiawebsite</h3>
+                        <p>Interactive web application for the popular party game 'Mafia', managing game states and
+                            roles.</p>
+                        <div class="tech-stack">
+                            <span>JavaScript</span><span>HTML5</span><span>CSS3</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/greenmartialarts/mafiawebsite" target="_blank"><i
+                                    class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 6: Personal Portfolio -->
+                <article class="project-card tilt-card">
+                    <div class="project-image">
+                        <div class="placeholder-img"
+                            style="background: linear-gradient(135deg, #00ff41 0%, #0a0a0a 100%); display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-user-astronaut fa-3x" style="color: rgba(255,255,255,0.8);"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Personal Portfolio</h3>
+                        <p>This website! Features a custom neon theme, 3D tilt effects, and a custom cursor engine.</p>
+                        <div class="tech-stack">
+                            <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/greenmartialarts/portfolio" target="_blank"><i
+                                    class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </article>
+
+
+            </div>
+        </section>
+
+        <section id="stats" class="stats-section hidden">
+            <h2 class="section-title">GitHub Stats</h2>
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <i class="fas fa-code-branch"></i>
+                    <h3 id="repo-count">--</h3>
+                    <p>Total Repos</p>
+                </div>
+                <div class="stat-box">
+                    <i class="fas fa-layer-group"></i>
+                    <h3 id="ts-repo-count">--</h3>
+                    <p>TypeScript Projects</p>
+                </div>
+                <div class="stat-box">
+                    <i class="fas fa-star"></i>
+                    <h3 id="star-count">--</h3>
+                    <p>Total Stars</p>
+                </div>
+                <div class="stat-box">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3 id="years-active">--</h3>
+                    <p>Years Active</p>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="https://github.com/greenmartialarts" target="_blank" class="cta-button">View GitHub Profile</a>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section hidden">
+            <h2 class="section-title">Get In Touch</h2>
+            <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
+            </p>
+            <a href="mailto:arnav.shah.2k1@gmail.com" class="contact-button"><i class="fas fa-envelope"></i> Say
+                Hello</a>
+            <div class="social-links">
+                <a href="https://github.com/greenmartialarts" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Arnav Shah. Built with <i class="fas fa-code"></i> & <i class="fas fa-heart"></i></p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
